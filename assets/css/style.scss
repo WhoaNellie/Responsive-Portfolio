@@ -1,6 +1,114 @@
+$accent-color: #3F51B5;
+$background-color: #fcf5e4;
+$wrapper-color: white;
+
+body{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 140%;
+    font-size: 16pt;
+    background-color: #fcf5e4;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    overflow-x:hidden;
+}
+
+header{
+    height: 200px;
+    background-color: $accent-color;
+    position: relative;
+    border-bottom: 1px solid darken($accent-color, 10%);
+
+    h1{
+        text-indent: -9999px;
+        height: 220px;
+        width: 550px;
+        background: url("../images/nellielogo.png") no-repeat;
+        
+        a{
+            display: block;
+            position: absolute;
+            top: 0;
+            height: 200px;
+            width: 550px;
+        }
+    }
+
+    nav{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(100%/2);
+        height: 100px;
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+
+            li{
+                text-indent: -9999px;
+                position: relative;
+
+                a{
+                    // position: absolute;
+                    display: block;
+                    height: 100px;
+                    width: calc(700px/4);
+                }
+
+                a:hover{
+                    background-color: rgba(128, 128, 128, 0.39);
+                    border-radius: 1%;
+                }
+                
+            }
+
+            .current{
+                background-color: rgba(255, 255, 255, 0.288);
+                border-radius: 1%;
+            }
+
+            .about{
+                background: url("../images/about.png")no-repeat;
+            }
+
+            .portfolio{
+                background: url("../images/portfolio.png") no-repeat;
+            }
+
+            .contact{
+                background: url("../images/contact.png") no-repeat;
+            }
+        }
+    }
+}
+
 img{
     border-radius: 50%;
     border: 20px solid transparent;
     float: left;
     shape-outside: circle(50%);
+}
+.project{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow:hidden;
+
+    margin: calc(calc(1100px - 2*74px - 250px*3)/6);
+
+img{
+    width: 250px;
+    border: none;
+}
+div{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    background-color: rgba(63, 81, 181, 0.801);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25pt;
+    padding: 5px;
+}
 }
