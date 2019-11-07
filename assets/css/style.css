@@ -13,13 +13,13 @@ header {
   position: relative;
   border-bottom: 1px solid #32408f;
 }
-header h1 {
+header .logo {
   text-indent: -9999px;
   height: 220px;
   width: 550px;
   background: url("../images/nellielogo.png") no-repeat;
 }
-header h1 a {
+header .logo a {
   display: block;
   position: absolute;
   top: 0;
