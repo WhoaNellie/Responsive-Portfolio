@@ -98,8 +98,7 @@ img {
 
 .container-outer {
   background-color: white;
-  width: 80%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 3% auto -50px auto;
   padding: 5% 5% 10% 5%;
   background-color: white;
@@ -117,6 +116,13 @@ h2, legend {
 }
 
 @media (max-width: 900px) {
+  .portrait {
+    text-align: center;
+  }
+  .portrait img {
+    float: none;
+  }
+
   nav::before {
     content: url("../images/nellielogo.png");
     width: 275px;
