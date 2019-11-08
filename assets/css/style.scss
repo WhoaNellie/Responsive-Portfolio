@@ -136,6 +136,24 @@ h2, legend{
     padding-bottom: 2%;
 }
 
+form{
+
+    input[type=text], textarea{
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    button{
+        background-color: $accent-color;
+        color: white;
+        font-size: xx-large;
+        border: none;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+}
+
 footer{
     height: 100px;
     width: 100%;
@@ -146,6 +164,15 @@ footer{
 }
 
 @media (max-width: 900px){
+
+    .container-outer{
+        border: none;
+        margin: 0;
+    }
+
+    h2{
+        text-align: center;
+    }
 
         .portrait {
 
@@ -195,4 +222,9 @@ footer{
     .nav-link{
         width: 100%;
     }
+
+    input[type=text], textarea{
+        border: 2px solid lightgrey;
+    }
+
 }
