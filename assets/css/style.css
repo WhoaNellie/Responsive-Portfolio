@@ -48,8 +48,8 @@ header nav ul li a {
   width: calc(700px/4);
 }
 header nav ul li a:hover {
-  background-color: rgba(128, 128, 128, 0.39);
-  border-radius: 1%;
+  border: 3px dotted rgba(211, 211, 211, 0.658);
+  border-radius: 5%;
 }
 header nav ul .current {
   background-color: rgba(255, 255, 255, 0.288);
@@ -118,6 +118,7 @@ h2, legend {
 form input[type=text], form textarea {
   width: 100%;
   margin: 8px 0;
+  border: 2px solid lightgrey;
 }
 form button {
   background-color: #3F51B5;
@@ -194,10 +195,6 @@ footer {
 
   .nav-link {
     width: 100%;
-  }
-
-  input[type=text], textarea {
-    border: 2px solid lightgrey;
   }
 }
 

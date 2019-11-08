@@ -56,8 +56,8 @@ header{
                 }
 
                 a:hover{
-                    background-color: rgba(128, 128, 128, 0.39);
-                    border-radius: 1%;
+                    border: 3px dotted rgba(211, 211, 211, 0.658);
+                    border-radius: 5%;
                 }
                 
             }
@@ -141,6 +141,7 @@ form{
     input[type=text], textarea{
         width: 100%;
         margin: 8px 0;
+        border: 2px solid lightgrey;
     }
 
     button{
@@ -221,10 +222,6 @@ footer{
 
     .nav-link{
         width: 100%;
-    }
-
-    input[type=text], textarea{
-        border: 2px solid lightgrey;
     }
 
 }
