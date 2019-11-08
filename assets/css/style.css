@@ -99,13 +99,13 @@ img {
 .container-outer {
   background-color: white;
   max-width: 1200px;
-  margin: 3% auto -50px auto;
-  padding: 5% 5% 10% 5%;
+  margin: 3% auto 0 auto;
+  padding: 5% 5% 100px 5%;
   background-color: white;
   overflow: auto;
   border-radius: 1%;
   border: 1px solid lightgray;
-  min-height: calc(100vh - 600px);
+  min-height: calc(100vh - 100px);
 }
 
 h2, legend {
@@ -113,6 +113,15 @@ h2, legend {
   font-size: 30pt;
   color: #3F51B5;
   padding-bottom: 2%;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #fcf5e4;
+  border-top: 10px solid #3F51B5;
+  text-align: center;
+  margin-top: -10px;
 }
 
 @media (max-width: 900px) {

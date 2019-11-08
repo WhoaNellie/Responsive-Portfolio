@@ -118,15 +118,14 @@ img{
     background-color: white;
     // width: 80%;
     max-width: 1200px;
-    margin: 3% auto -50px auto;
-    padding: 5% 5% 10% 5%;
+    margin: 3% auto 0 auto;
+    padding: 5% 5% 100px 5%;
     background-color: $wrapper-color;
     overflow: auto;
     border-radius: 1%;
     border: 1px solid lightgray;
 
-    // for some reason 600px makes the sticky footer not absurdly long
-    min-height: calc(100vh - 600px);
+    min-height: calc(100vh - 100px);
 
 }
 
@@ -137,6 +136,14 @@ h2, legend{
     padding-bottom: 2%;
 }
 
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: $background-color;
+    border-top: 10px solid $accent-color;
+    text-align: center;
+    margin-top: -10px;
+}
 
 @media (max-width: 900px){
 
