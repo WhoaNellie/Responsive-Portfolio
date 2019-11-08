@@ -33,15 +33,16 @@ header{
     }
 
     nav{
-        position: absolute;
+        position: absolute!important;
         bottom: 0;
-        right: 0;
-        width: calc(100%/2);
+        margin-bottom: 25px;
         height: 100px;
+        width: 100%;
 
         ul{
             display: flex;
             justify-content: space-around;
+            margin-left: auto;
 
             li{
                 text-indent: -9999px;
@@ -112,3 +113,49 @@ div{
     padding: 5px;
 }
 }
+
+@media (max-width: 900px){
+
+        nav::before{
+            content: url("../images/nellielogo.png");
+            width: 275px;
+            overflow: hidden;
+            position: relative;
+            top: -90px;
+        }
+
+        .logo{
+            display: none;
+        }
+    
+
+    .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+        background-color: white;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+    }
+    .navbar-toggler-icon {
+        background-image: url("../images/hamburger.svg");
+    }
+
+    .show{
+        background-color: $accent-color;
+        position: absolute;
+        width: 105%;
+        top: 125px;
+        z-index: 2;
+        margin: -20px;
+    }
+
+    .nav-item{
+        background-position: center!important;
+    }
+
+    .nav-link{
+        width: 100%;
+    }
+}
+
