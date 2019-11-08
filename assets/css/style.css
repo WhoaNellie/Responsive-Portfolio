@@ -96,6 +96,26 @@ img {
   padding: 5px;
 }
 
+.container-outer {
+  background-color: white;
+  width: 80%;
+  max-width: 960px;
+  margin: 3% auto -50px auto;
+  padding: 5% 5% 10% 5%;
+  background-color: white;
+  overflow: auto;
+  border-radius: 1%;
+  border: 1px solid lightgray;
+  min-height: calc(100vh - 600px);
+}
+
+h2, legend {
+  font-weight: bold;
+  font-size: 30pt;
+  color: #3F51B5;
+  padding-bottom: 2%;
+}
+
 @media (max-width: 900px) {
   nav::before {
     content: url("../images/nellielogo.png");
